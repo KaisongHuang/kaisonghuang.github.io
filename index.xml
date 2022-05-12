@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title></title>
+        <title>SFU</title>
         <link>https://kaisonghuang.github.io/</link>
-        <description></description>
+        <description>SFU</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language>
             <atom:link href="https://kaisonghuang.github.io/index.xml" rel="self" type="application/rss+xml" />
         </channel>
