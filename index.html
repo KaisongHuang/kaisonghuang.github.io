@@ -10,10 +10,29 @@
     <title>Kaisong Huang - School of Computing Science @ SFU</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
 
+        .letter-container {
+            background: #fff; /* A white background for the letter */
+            margin: 10px; /* Centers the container with some margin from the top */
+            padding: 10px;
+            max-width: 97%; /* Maximum width of the letter */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to create the floating effect */
+            border-radius: 5px; /* Optional: slightly rounded corners for the letter */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 490px) {
+            .letter-container {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
         .container {
             width: 98%;
             margin: auto;
@@ -36,7 +55,8 @@
             width: 210px;
             height: 210px;
             object-fit: cover;
-            margin-right: 20px;
+            margin-right: 10px;
+            margin-top: 8px;
         }
 
         .profile .name {
@@ -57,7 +77,7 @@
                 /* You may want to scale down the image on smaller screens */
                 height: 210px;
                 /* Maintain the aspect ratio if desired */
-                margin-right: 0;
+                margin-right: 0px;
                 /* Remove the margin since the image will be above the text */
                 margin-bottom: 10px;
                 /* Add some space below the image */
@@ -143,18 +163,19 @@
 </head>
 
 <body>
+    <div class="letter-container">
     <header>
         <div class="container profile">
             <img src="resource/kaisong_profile_van.png" alt="Kaisong Huang">
             <div class="name">
-                <h1 style="font-size: 1em; margin-top: 0;">HUANG, Kaisong<br>黄铠松</h1>
+                <h1 style="font-size: 1.4em; margin-top: 0px;">HUANG, Kaisong<br>黄铠松</h1>
                 <!-- <h2 style="font-size: 1em;">黄铠松</h2> -->
-                <p>
+                <p style="font-size: 0.95em; margin-top: 0px;">
                     PhD Candidate<br>
                     School of Computing Science<br>
                     Simon Fraser University
                 </p>
-                <p>
+                <p style="font-size: 0.95em; margin-top: 0px;">
                     Lab: TASC1 9400<br>
                     Email: kha85@sfu.ca
                 </p>
@@ -348,6 +369,7 @@
             <p>© 2023 Kaisong Huang. All Rights Reserved.</p>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>
