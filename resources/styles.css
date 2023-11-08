@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.letter-container {
+    background: #fff; /* A white background for the letter */
+    margin: 10px; /* Centers the container with some margin from the top */
+    padding: 10px;
+    max-width: 97%; /* Maximum width of the letter */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to create the floating effect */
+    border-radius: 5px; /* Optional: slightly rounded corners for the letter */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 490px) {
+    .letter-container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+.container {
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+header .profile {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.profile .name {
+    margin: 0;
+}
+
+/* Responsive design for screens less than 600px wide */
+@media (max-width: 490px) {
+    header .profile {
+        flex-direction: column;
+        /* Stack flex items vertically on small screens */
+        align-items: flex-start;
+        /* Align items to the start (top) of the container */
+    }
+
+    .profile img {
+        width: 210px;
+        /* You may want to scale down the image on smaller screens */
+        height: 210px;
+        /* Maintain the aspect ratio if desired */
+        margin-right: 0px;
+        /* Remove the margin since the image will be above the text */
+        margin-bottom: 10px;
+        /* Add some space below the image */
+    }
+
+    .profile .name {
+        width: 100%;
+        /* Allow the text to take full width below the image */
+    }
+}
+
+/* Removes default margin from name and title */
+section {
+    margin: 0px 0;
+}
+
+.section-title {
+    background: #fff;
+    padding: 0px 10px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content {
+    padding: 0px 10px;
+    margin-top: 0px;
+    /* Reduced top margin */
+}
+
+footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+hr {
+    border: 0;
+    /* Removes the default border */
+    height: 1px;
+    /* Sets the height of the line */
+    background-color: #d3d3d3;
+    /* Light grey color */
+    margin-top: 10px;
+    /* Space above the hr */
+    margin-bottom: 0px;
+    /* Space below the hr */
+    width: 96%;
+    /* Adjusts the width of the hr to be 50% of its container */
+    margin-left: auto;
+    /* Centers the hr line */
+    margin-right: auto;
+    /* Centers the hr line */
+}
+
+ul {
+    /* Resets padding and margin for all unordered lists */
+    padding-left: 10px;
+    margin-left: 10px;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+ol {
+    /* Targets all ordered lists */
+    padding-left: 0px;
+    /* Reduces or removes the left padding */
+    margin-left: 0px;
+    /* Reduces or removes the left margin */
+    list-style-position: outside;
+    /* Positions the numbers inside the padding area */
+}
+
+ol li {
+    /* Targets list items specifically */
+    padding-left: 0;
+    /* Ensures no additional padding on list items */
+    margin-left: 0;
+    /* Ensures no additional margin on list items */
+}
