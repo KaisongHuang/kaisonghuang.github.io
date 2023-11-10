@@ -1,3 +1,11 @@
+a {
+    text-decoration: none; /* Removes the underline from all hyperlinks */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Adds an underline on hover for better user experience */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +18,6 @@ body {
     background: #fff; /* A white background for the letter */
     margin: 10px; /* Centers the container with some margin from the top */
     padding: 10px;
-    max-width: 97%; /* Maximum width of the letter */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to create the floating effect */
     border-radius: 5px; /* Optional: slightly rounded corners for the letter */
 }
